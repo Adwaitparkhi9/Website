@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Class 78</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p><h1>fruits in the array</h1>
+            <h4 id="DeclareArray"></h4>
+        </p>
+        <hr>
+        <p><h2>length of the array</h2>
+            <h3 id="Array"></h3>
+        </p>
+        <hr>
+        <p><h2>for loop</h2>
+            <h3 id="loopfruit"></h3>
+        </p>
+        <hr>
+        <p><h2>Add element (add to the array)</h2>
+            <h3 id="add"></h3>
+        </p>
+        <p> <h1> Alphabets</h1> 
+            <h4 id = "aplha"></h4> 
+        </p> <hr> 
+        <p> <h1> Reverse Alphabets</h1>
+             <h4 id = "rev"></h4>
+             </p> <hr> <p>
+                  <h1> Sort Alphabets</h1>
+                   <h4 id = "sortaplha"></h4> </p>
+
+     <script>
+         var fruits = ["apple","jamun","Banana","Mango"];
+         console.log(fruits);
+         document.getElementById("DeclareArray").innerHTML = fruits;
+         var length = fruits.length;
+         console.log(length);
+         document.getElementById("Array").innerHTML = length;
+         var x = ""; for (i = 0; i < fruits.length;
+          i++) { console.log(fruits[i]); x = x + fruits[i] + "<br>";
+         } document.getElementById("loopfruit").innerHTML = x;
+         fruits.push("Green apple");
+         console.log(fruits);
+         document.getElementById("add").innerHTML = fruits;
+         var alphabets = ["A","b","c","d","e","f","g","h","i"];
+        console.log(alphabets);
+        document.getElementById("aplha").innerHTML = alphabets; 
+        alphabets.reverse(); 
+        console.log(alphabets);
+         document.getElementById("rev").innerHTML = alphabets;
+          alphabets.sort(); console.log(alphabets);
+           document.getElementById("sortaplha").innerHTML = alphabets;
+
+
+     </script>
+    </body>
+    </html>
